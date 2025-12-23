@@ -7,7 +7,10 @@ import { ControlComponent } from '../../../shared/control/control.component';
   standalone: true,
   imports: [ButtonComponent, ControlComponent],
   templateUrl: './new-ticket.component.html',
-  styleUrl: './new-ticket.component.css'
+  styleUrl: './new-ticket.component.css',
+  host: {
+    class: 'control'
+  }
 })
 export class NewTicketComponent {
 
